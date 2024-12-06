@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <TextView
+        android:id="@+id/tvRes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvN"
+        android:text="@string/desc_urn_1"
+        />
+
+    <TextView
+        android:id="@+id/tvN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:text="@string/n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilN"
+        app:layout_constraintTop_toBottomOf="@id/tvRes1"
+        app:layout_constraintBottom_toTopOf="@id/tvM"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilN"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvRes1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvN"
+        app:layout_constraintBottom_toTopOf="@id/tvM"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:text="@string/m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilM"
+        app:layout_constraintTop_toBottomOf="@id/tvN"
+        app:layout_constraintBottom_toTopOf="@id/tvK"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilM"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvM"
+        app:layout_constraintBottom_toTopOf="@id/tvK"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:text="@string/k"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilK"
+        app:layout_constraintTop_toBottomOf="@id/tvM"
+        app:layout_constraintBottom_toTopOf="@id/btnRes1"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilK"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvK"
+        app:layout_constraintBottom_toTopOf="@id/btnRes1"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRes1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvK"
+        app:layout_constraintBottom_toTopOf="@id/tvRes2"
+        app:layout_constraintWidth_percent="0.8"
+        android:text="@string/button_urn"
+        />
+
+    <TextView
+        android:id="@+id/tvRes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRes1"
+        app:layout_constraintBottom_toTopOf="@id/tvR"
+        android:text="@string/desc_urn_2"
+        />
+
+    <TextView
+        android:id="@+id/tvR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:text="@string/r"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilR"
+        app:layout_constraintTop_toBottomOf="@id/tvRes2"
+        app:layout_constraintBottom_toTopOf="@id/btnRes2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilR"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvRes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvR"
+        app:layout_constraintBottom_toTopOf="@id/btnRes2"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRes2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/tvR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/button_urn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

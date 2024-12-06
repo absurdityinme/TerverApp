@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TerverApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="comb">Комбинаторика</string>
+    <string name="urn">Урновая модель</string>
+    <string name="n">Введите количество предметов</string>
+    <string name="m">Введите количество меченых предметов</string>
+    <string name="k">Введите количество извлекаемых предметов</string>
+    <string name="desc_urn_1">Найти, что все меченые</string>
+    <string name="button_urn">Рассчитать</string>
+    <string name="desc_urn_2">Найти, что только r меченых</string>
+    <string name="r">Введите r</string>
+    <string name="main_intro">Добро пожаловать в калькулятор вероятностей! Пожалуйста, выберите категорию</string>
+</resources>
