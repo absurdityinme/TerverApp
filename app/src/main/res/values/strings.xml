@@ -3,12 +3,20 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="comb">Комбинаторика</string>
     <string name="urn">Урновая модель</string>
-    <string name="n">Введите количество предметов</string>
-    <string name="m">Введите количество меченых предметов</string>
-    <string name="k">Введите количество извлекаемых предметов</string>
+    <string name="n">Введите количество предметов n</string>
+    <string name="m">Введите количество меченых предметов m</string>
+    <string name="k">Введите количество извлекаемых предметов k</string>
     <string name="desc_urn_1">Найти, что все меченые</string>
     <string name="button_urn">Рассчитать</string>
     <string name="desc_urn_2">Найти, что только r меченых</string>
     <string name="r">Введите r</string>
     <string name="main_intro">Добро пожаловать в калькулятор вероятностей! Пожалуйста, выберите категорию</string>
+    <string name="answer">Ответ:</string>
+    <string name="answer_sample">0.45</string>
+    <string name="perest">Перестановка</string>
+    <string name="sochet">Сочетание</string>
+    <string name="razmesh">Размещение</string>
+    <string name="with_repeat">С повторениями</string>
+    <string name="n_perest">Введите n:</string>
+    <string name="k_perest">Введите k:</string>
 </resources>

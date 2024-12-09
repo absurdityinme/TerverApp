@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp">
 
@@ -25,6 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/UrnText"
+        android:layout_marginEnd="8dp"
         android:text="@string/n"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tilN"
@@ -56,6 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/UrnText"
+        android:layout_marginEnd="8dp"
         android:text="@string/m"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tilM"
@@ -87,6 +90,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/UrnText"
+        android:layout_marginEnd="8dp"
         android:text="@string/k"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tilK"
@@ -143,6 +147,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/UrnText"
+        android:layout_marginEnd="8dp"
         android:text="@string/r"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tilR"
@@ -176,8 +181,35 @@
         app:layout_constraintTop_toBottomOf="@id/tvR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvHeaderAnswer"
         android:text="@string/button_urn"
         />
 
+    <TextView
+        android:id="@+id/tvHeaderAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/UrnText"
+        android:textStyle="bold"
+        android:text="@string/answer"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRes2"
+        app:layout_constraintEnd_toStartOf="@id/tvAnswer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="0dp"
+        style="@style/UrnText"
+        android:textColor="@color/purple_700"
+        tool:text="@string/answer_sample"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnRes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvHeaderAnswer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

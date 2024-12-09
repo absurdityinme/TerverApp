@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp">
+
+    <Button
+        android:id="@+id/btnRazmesh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.49"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@id/btnSochet"
+        app:layout_constraintBottom_toTopOf="@id/btnPerest"
+        android:text="@string/razmesh"
+        />
+
+    <Button
+        android:id="@+id/btnSochet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.49"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnRazmesh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnPerest"
+        android:text="@string/sochet"
+        />
+
+    <Button
+        android:id="@+id/btnPerest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnSochet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/comb_container"
+        android:text="@string/perest"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/comb_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRazmesh"
+        app:layout_constraintBottom_toTopOf="@id/btnWithRep"/>
+
+    <Button
+        android:id="@+id/btnWithRep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comb_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/baseline_radio_button_unchecked_24"
+        android:text="@string/with_repeat"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/grey"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

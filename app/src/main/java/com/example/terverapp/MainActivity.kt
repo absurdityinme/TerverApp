@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-//            supportFragmentManager.beginTransaction()
-//                .add(mainContainerId, ViewPagerFragment())
-//                .commit()
+            supportFragmentManager.beginTransaction()
+                .add(mainContainerId, MainFragment())
+                .commit()
     }
 
-        companion object {
-            val mainContainerId: Int = R.id.main_container
-        }
+    companion object {
+        val mainContainerId: Int = R.id.main_container
+    }
 }
